@@ -1,0 +1,184 @@
+button {
+  background: transparent;
+  color: #ffffff;
+}
+.App {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(20, 20, 21);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(20, 20, 21, 0.9);
+  height: 60px;
+  top: 4px;
+  width: 100vw;
+  z-index: 20;
+}
+header #voltar {
+  text-transform: uppercase;
+  border-radius: 0px;
+  padding: 0px 14px;
+  font-size: 1.8rem;
+  position: absolute;
+  left: 30px;
+}
+
+.App-Scaffold {
+  display: flex;
+  flex-direction: row;
+  align-items: initial;
+  justify-content: space-between;
+  width: 70vw;
+  height: 70vh;
+  margin: 2rem auto;
+}
+.txt {
+  display: flex;
+  flex-direction:column;
+  font-size: 2.800rem;
+  width: 26rem;
+}
+.txt h3 {
+  margin-left: 1.800rem;
+  margin-top: 4.900rem;
+  font-weight: 500;
+  line-height: 3.700rem;
+}
+.txt span {
+  display: flex;
+  width: 5.300rem;
+  height: 0.140rem;
+  background: url(./graphism_clone_img_telecine.svg);
+  margin-left: 1.800rem;
+}
+.sys_login {
+display: flex;
+margin-top: -2rem;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+width: 20rem;
+}
+
+.btn_login {
+  max-height: 44px;
+  min-height: 36px;
+  border: none;
+  max-width: 272px;
+  min-width: fit-content;
+  width: 100%;
+  color: rgb(235, 235, 235);
+  padding: 0px 10px;
+  display: flex;
+  white-space: nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all 3s ease-in-out 0s;
+  background-image: linear-gradient(to right, rgb(255, 20, 45) 0%, rgb(185, 16, 34) 100%);
+  height: 44px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  outline: none;
+}
+.btn_login:hover::before {
+  position: absolute;
+  border-radius: 10px;
+  content: "";
+  inset: 0px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(to right, rgb(255, 20, 45) 0%, rgb(185, 16, 34) 100%);
+  z-index: 1;
+  transition: opacity 0.4s ease-in-out 0s;
+  opacity: 0;
+}
+
+.btn_operadora {
+    max-height: 44px; 
+    min-height: 36px; 
+    max-width: 272px; 
+    width: 100%; 
+    color: rgb(235, 235, 235);
+    padding: 0px 10px;
+    display: flex;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: all 0.4s ease-in-out 0s;
+    border: 2px solid rgb(255, 255, 255);
+    height: 44px;
+    border-radius: 10px;
+    font-weight: 500;
+} 
+.p_onee {
+  font-size: 0.800rem;
+  opacity: 0.6;
+  font-weight: 300;
+}
+
+.sys_cadastro {
+  margin-top: 1rem;
+}
+
+.sys_cadastro p {
+  font-size: 0.800rem;
+}
+
+.sys_cadastro, a {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+.sys_cadastro a {
+  padding-left: 0.600rem;
+  color:rgb(235, 235, 235);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.sys_cadastro a::after {
+  content: "";
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-image: initial;
+  border-width: 0px 3px 3px 0px;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(-45deg);
+  vertical-align: -2px;
+  margin-left: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 14rem;
+  opacity: 0.5;
+  width: 60vw;
+}
+
+footer span {
+  display: flex;
+  flex-direction: row;
+  width: 45px;
+  margin-top: 1rem;
+  margin-left: 0.500rem;
+  align-items: center;
+  height: 1.200rem;
+  background: url(./help_clone_telecine.svg) no-repeat;
+}
